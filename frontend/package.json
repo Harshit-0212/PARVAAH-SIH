@@ -15,7 +15,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@oxlint/binding-win32-x64-msvc": "^1.82.0",
     "@tailwindcss/vite": "^4.3.3",
     "@types/leaflet": "^1.9.22",
     "leaflet": "^1.9.4",
@@ -35,7 +34,7 @@
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
     "@vitejs/plugin-react": "^4.7.0",
-    "oxlint": "^1.79.0",
+    "oxlint": "^1.85.0",
     "typescript": "~6.0.2",
     "vite": "^5.4.21"
   }
