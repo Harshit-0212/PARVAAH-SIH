@@ -1,0 +1,112 @@
+[
+  {
+    "site_id": "SIT-AS-01",
+    "site_name": "Guwahati Resilient Transit Shelter",
+    "state": "Assam",
+    "district": "Guwahati",
+    "safe_from_landslides": true,
+    "capacity_families": 150,
+    "capacity_people": 750,
+    "latitude": 26.1445,
+    "longitude": 91.7362
+  },
+  {
+    "site_id": "SIT-AS-02",
+    "site_name": "Kamrup Valley Civil Emergency Relief Centre",
+    "state": "Assam",
+    "district": "Kamrup Metropolitan",
+    "safe_from_landslides": true,
+    "capacity_families": 120,
+    "capacity_people": 600,
+    "latitude": 26.1867,
+    "longitude": 91.7924
+  },
+  {
+    "site_id": "SIT-WB-01",
+    "site_name": "Siliguri Plains Staging & Rehabilitation Hub",
+    "state": "West Bengal",
+    "district": "Darjeeling",
+    "safe_from_landslides": true,
+    "capacity_families": 200,
+    "capacity_people": 1000,
+    "latitude": 26.7271,
+    "longitude": 88.3953
+  },
+  {
+    "site_id": "SIT-WB-02",
+    "site_name": "Teesta Valley Safe High Ground Camp",
+    "state": "West Bengal",
+    "district": "Kalimpong",
+    "safe_from_landslides": true,
+    "capacity_families": 80,
+    "capacity_people": 400,
+    "latitude": 27.0652,
+    "longitude": 88.4721
+  },
+  {
+    "site_id": "SIT-NG-01",
+    "site_name": "Kohima High Ridge Community Complex",
+    "state": "Nagaland",
+    "district": "Kohima",
+    "safe_from_landslides": true,
+    "capacity_families": 100,
+    "capacity_people": 500,
+    "latitude": 25.6669,
+    "longitude": 94.1105
+  },
+  {
+    "site_id": "SIT-NG-02",
+    "site_name": "Tuensang Valley Relief Center",
+    "state": "Nagaland",
+    "district": "Tuensang",
+    "safe_from_landslides": true,
+    "capacity_families": 60,
+    "capacity_people": 300,
+    "latitude": 26.2201,
+    "longitude": 94.8102
+  },
+  {
+    "site_id": "SIT-AR-01",
+    "site_name": "Dirang Safe Haven High School",
+    "state": "Arunachal Pradesh",
+    "district": "West Kameng",
+    "safe_from_landslides": true,
+    "capacity_families": 90,
+    "capacity_people": 450,
+    "latitude": 27.3562,
+    "longitude": 92.2421
+  },
+  {
+    "site_id": "SIT-AR-02",
+    "site_name": "Tawang Cantonment Safe Shelter",
+    "state": "Arunachal Pradesh",
+    "district": "Tawang",
+    "safe_from_landslides": true,
+    "capacity_families": 70,
+    "capacity_people": 350,
+    "latitude": 27.5852,
+    "longitude": 91.8687
+  },
+  {
+    "site_id": "SIT-MN-01",
+    "site_name": "Senapati Valley Integrated Evacuation Stash",
+    "state": "Manipur",
+    "district": "Senapati",
+    "safe_from_landslides": true,
+    "capacity_families": 75,
+    "capacity_people": 375,
+    "latitude": 25.2654,
+    "longitude": 94.0152
+  },
+  {
+    "site_id": "SIT-MZ-01",
+    "site_name": "Aizawl South Safe Ridge Relocation Center",
+    "state": "Mizoram",
+    "district": "Aizawl",
+    "safe_from_landslides": true,
+    "capacity_families": 85,
+    "capacity_people": 425,
+    "latitude": 23.7121,
+    "longitude": 92.7189
+  }
+]

@@ -1,0 +1,4 @@
+# models/.gitkeep
+# This file exists only to allow Git to track the otherwise-empty models/ directory.
+# Trained model files (*.json, *.joblib, *.pkl) are excluded via .gitignore.
+# Generate them locally by running:  python training/train_model.py

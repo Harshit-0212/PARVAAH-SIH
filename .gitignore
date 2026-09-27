@@ -1,0 +1,73 @@
+# ==============================================================================
+# PARVAAH (SIH26191) Multi-Service Git Ignore Configuration
+# ==============================================================================
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+service-account.json
+firebase-adminsdk*.json
+
+# Dependencies & Package Managers
+node_modules/
+.pnp
+.pnp.js
+
+# Build Artifacts & Distribution
+dist/
+dist-ssr/
+build/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Local Uploads, Media, & Scratch Directories
+uploads/
+storage/
+media/
+public/uploads/
+tmp/
+temp/
+
+# Logs & Database Dumps
+*.log
+logs/
+dump/
+backups/
+*.sqlite
+*.db
+
+# Python & ML Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# ML Raw & Quarantine Datasets
+ml-service/data/private/
+ml-service/data/raw/
+ml-service/data/quarantine/
+ml-service/data/processed/*.csv
+ml-service/data/processed/*.xlsx
+landslide_negative_output/
+ml-service/landslide_negative_output/
+
+# ML Binary Model Checkpoints
+ml-service/models/*.joblib
+ml-service/models/*.pkl
+ml-service/models/*excel*
+ml-service/reports/*private*
+
+# Editor & OS Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json

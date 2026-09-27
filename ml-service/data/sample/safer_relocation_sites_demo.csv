@@ -1,0 +1,11 @@
+site_id,site_name,state,district,safe_from_landslides,capacity_families,capacity_people,latitude,longitude
+SIT-AS-01,Guwahati Resilient Transit Shelter,Assam,Guwahati,True,150,750,26.1445,91.7362
+SIT-AS-02,Kamrup Valley Civil Emergency Relief Centre,Assam,Kamrup Metropolitan,True,120,600,26.1867,91.7924
+SIT-WB-01,Siliguri Plains Staging & Rehabilitation Hub,West Bengal,Darjeeling,True,200,1000,26.7271,88.3953
+SIT-WB-02,Teesta Valley Safe High Ground Camp,West Bengal,Kalimpong,True,80,400,27.0652,88.4721
+SIT-NG-01,Kohima High Ridge Community Complex,Nagaland,Kohima,True,100,500,25.6669,94.1105
+SIT-NG-02,Tuensang Valley Relief Center,Nagaland,Tuensang,True,60,300,26.2201,94.8102
+SIT-AR-01,Dirang Safe Haven High School,Arunachal Pradesh,West Kameng,True,90,450,27.3562,92.2421
+SIT-AR-02,Tawang Cantonment Safe Shelter,Arunachal Pradesh,Tawang,True,70,350,27.5852,91.8687
+SIT-MN-01,Senapati Valley Integrated Evacuation Stash,Manipur,Senapati,True,75,375,25.2654,94.0152
+SIT-MZ-01,Aizawl South Safe Ridge Relocation Center,Mizoram,Aizawl,True,85,425,23.7121,92.7189

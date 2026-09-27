@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PARVAAH | Offline Mode</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, sans-serif;
+        background-color: #F6F7F5;
+        color: #1F2937;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 24px;
+        box-sizing: border-box;
+      }
+      .card {
+        background: #ffffff;
+        border: 1px solid #E5E7EB;
+        border-radius: 12px;
+        padding: 32px;
+        max-width: 480px;
+        width: 100%;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        text-align: center;
+      }
+      .badge {
+        display: inline-block;
+        background: #FEF3C7;
+        color: #92400E;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 9999px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0 0 12px 0;
+        color: #0F766E;
+      }
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #4B5563;
+        margin-bottom: 24px;
+      }
+      .btn {
+        background: #0F766E;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: #0D9488;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <span class="badge">OFFLINE — NO CONNECTION</span>
+      <h1>PARVAAH (परवाह) Offline Mode</h1>
+      <p>
+        You are currently offline. Application shell, cached emergency guides, and saved field data remain available. New reports will be safely queued on your device and synchronized once connection returns.
+      </p>
+      <button class="btn" onclick="window.location.reload()">Retry Connection</button>
+    </div>
+  </body>
+</html>

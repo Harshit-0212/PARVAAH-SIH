@@ -1,0 +1,82 @@
+import type { SensorRecord } from '../../types/index.js';
+
+const NOW_ISO = new Date().toISOString();
+
+export const DEMO_SENSORS: SensorRecord[] = [
+  {
+    id: 'SNS-SKM-01',
+    stationName: 'Sevoke Incline Telemetry Post 4',
+    district: 'east_sikkim',
+    state: 'Sikkim',
+    coordinates: { latitude: 26.9025, longitude: 88.4730 },
+    sensorType: 'Borehole Inclinometer',
+    reading: 42.8,
+    unit: 'mm shear displacement',
+    thresholdStatus: 'CRITICAL',
+    observedAt: NOW_ISO,
+    batteryPercent: 88,
+    elevationMeters: 420,
+    source: 'DEMO_DATA',
+    isDemo: true,
+    isLive: false,
+    updatedAt: NOW_ISO,
+    dataFreshness: 'FRESH'
+  },
+  {
+    id: 'SNS-MEG-02',
+    stationName: 'Mawkdok Gorge Piezometer Array',
+    district: 'east_khasi',
+    state: 'Meghalaya',
+    coordinates: { latitude: 25.3540, longitude: 91.8165 },
+    sensorType: 'Vibrating Wire Piezometer',
+    reading: 184.2,
+    unit: 'kPa pore pressure',
+    thresholdStatus: 'WARNING',
+    observedAt: NOW_ISO,
+    batteryPercent: 94,
+    elevationMeters: 1480,
+    source: 'DEMO_DATA',
+    isDemo: true,
+    isLive: false,
+    updatedAt: NOW_ISO,
+    dataFreshness: 'FRESH'
+  },
+  {
+    id: 'SNS-ASM-03',
+    stationName: 'Jatinga Cut Slope TDR Sensor',
+    district: 'dima_hasao',
+    state: 'Assam',
+    coordinates: { latitude: 25.1760, longitude: 93.0160 },
+    sensorType: 'Time Domain Reflectometry Cable',
+    reading: 31.5,
+    unit: 'mm tensile elongation',
+    thresholdStatus: 'CRITICAL',
+    observedAt: NOW_ISO,
+    batteryPercent: 78,
+    elevationMeters: 650,
+    source: 'DEMO_DATA',
+    isDemo: true,
+    isLive: false,
+    updatedAt: NOW_ISO,
+    dataFreshness: 'FRESH'
+  },
+  {
+    id: 'SNS-NAG-04',
+    stationName: 'Dzükou Pass Acoustic Emissions Monitor',
+    district: 'kohima',
+    state: 'Nagaland',
+    coordinates: { latitude: 25.6720, longitude: 94.1060 },
+    sensorType: 'Micro-seismic Acoustic Sensor',
+    reading: 12.4,
+    unit: 'hits/min micro-fractures',
+    thresholdStatus: 'NORMAL',
+    observedAt: NOW_ISO,
+    batteryPercent: 91,
+    elevationMeters: 1850,
+    source: 'DEMO_DATA',
+    isDemo: true,
+    isLive: false,
+    updatedAt: NOW_ISO,
+    dataFreshness: 'FRESH'
+  }
+];

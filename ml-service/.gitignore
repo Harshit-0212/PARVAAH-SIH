@@ -1,0 +1,34 @@
+# ──────────────────────────────────────────────
+# ml-service/.gitignore
+# Synthetic XGBoost Practice Workspace
+# ──────────────────────────────────────────────
+
+# Python virtual environment
+.venv/
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+
+# Trained model artifacts (regenerate locally via train_model.py)
+models/*.json
+models/*.joblib
+models/*.pkl
+
+# Private raw data
+data/private/
+data/raw/
+data/quarantine/
+
+# Processed datasets that may contain private info
+data/processed/*.csv
+data/processed/*.xlsx
+
+# Negative output folder (if script uses it)
+landslide_negative_output/
+
+# Model artifacts
+models/*excel*
+
+# Environment variable files
+.env
