@@ -19,6 +19,7 @@ import { reportsRouter } from './routes/reports.routes.js';
 import { citizenActionsRouter } from './routes/citizen-actions.routes.js';
 import { scenariosRouter } from './routes/scenarios.routes.js';
 import { telemetryRouter } from './routes/telemetry.routes.js';
+import { riskRoutes } from './routes/riskRoutes.js';
 
 export const app = express();
 
@@ -87,6 +88,8 @@ app.use(API_PREFIX, reportsRouter);
 app.use(API_PREFIX, citizenActionsRouter);
 app.use(API_PREFIX, scenariosRouter);
 app.use(API_PREFIX, telemetryRouter);
+app.use(API_PREFIX, riskRoutes);
+app.use('/api', riskRoutes);
 
 // 404 handler for unknown routes
 app.use(notFoundHandler);

@@ -15,6 +15,10 @@ import {
 import type { Language, PageState } from '../types';
 import { dictionary } from '../data/translations';
 import { AnimatedHeroHeading } from '../components/AnimatedHeroHeading';
+import { FloodMap } from '../components/FloodMap';
+import { AlertsPanel } from '../components/AlertsPanel';
+import { fetchWardRisks, fetchAlerts } from '../services/riskApi';
+import type { WardRisk, WardAlert } from '../types/risk';
 
 interface LandingPageProps {
   lang: Language;
@@ -28,6 +32,14 @@ export const LandingPage: React.FC<LandingPageProps> = ({
   onOpenReportModal,
 }) => {
   const t = dictionary[lang];
+  const [wardRisks, setWardRisks] = React.useState<WardRisk[]>([]);
+  const [alerts, setAlerts] = React.useState<WardAlert[]>([]);
+  const [selectedWardId, setSelectedWardId] = React.useState<string | null>(null);
+
+  React.useEffect(() => {
+    fetchWardRisks().then((data) => setWardRisks(data)).catch(console.error);
+    fetchAlerts().then((data) => setAlerts(data)).catch(console.error);
+  }, []);
 
   return (
     <div className={`min-h-screen bg-[#F6F7F5] flex flex-col font-sans text-[#1F2937] ${lang === 'hi' ? 'lang-hi' : ''}`}>
@@ -119,6 +131,44 @@ export const LandingPage: React.FC<LandingPageProps> = ({
             </span>
           </div>
 
+        </div>
+      </section>
+
+      {/* 2.5 HYPER-LOCAL FLASH FLOOD EARLY WARNING SYSTEM (SIH CORE) */}
+      <section className="py-12 bg-slate-950 text-white border-b border-slate-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-red-500/10 text-red-400 border border-red-500/30 mb-2">
+                <AlertTriangle className="w-3.5 h-3.5" />
+                SIH26191 Hyper-Local Early Warning Engine
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-black tracking-tight text-white">
+                Live Ward-Level Flash Flood Hazard & Early Warnings
+              </h2>
+              <p className="text-sm text-slate-400 max-w-2xl mt-1">
+                Combining INDOFLOODS historical catalog, IMD/Open-Meteo precipitation, and DEM stream-proximity modeling to calculate lead times and actionable evacuations.
+              </p>
+            </div>
+          </div>
+
+          {/* Interactive GIS Map & Alerts Panel Grid */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+            <div className="lg:col-span-7">
+              <FloodMap
+                wardRisks={wardRisks}
+                selectedWardId={selectedWardId}
+                onSelectWard={(ward) => setSelectedWardId(ward.wardId)}
+              />
+            </div>
+            <div className="lg:col-span-5">
+              <AlertsPanel
+                alerts={alerts}
+                selectedWardId={selectedWardId}
+                onSelectAlert={(wardId) => setSelectedWardId(wardId)}
+              />
+            </div>
+          </div>
         </div>
       </section>
 

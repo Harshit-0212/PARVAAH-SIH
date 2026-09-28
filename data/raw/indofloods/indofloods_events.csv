@@ -1,0 +1,11 @@
+flood_id,state,district,ward_id,ward_name,year,flood_type,severity
+1,Assam,Kamrup,W-01,Silpukhuri Ward,2017,Flash Flood,High
+2,Assam,Kamrup,W-01,Silpukhuri Ward,2019,Riverine/Flash,Very High
+3,Assam,Kamrup,W-01,Silpukhuri Ward,2022,Flash Flood,High
+4,Assam,Kamrup,W-02,Dispur Valley,2018,Urban Flash Flood,Moderate
+5,Assam,Kamrup,W-02,Dispur Valley,2023,Flash Flood,High
+6,Assam,Kamrup,W-03,Kamakhya Foothills,2020,Flash Flood,Moderate
+7,Assam,Cachar,W-04,Silchar Central,2021,Urban Inundation,High
+8,Assam,Cachar,W-04,Silchar Central,2022,Flash Flood,Very High
+9,Assam,Cachar,W-04,Silchar Central,2023,Flash Flood,High
+10,Assam,Darrang,W-05,Mangaldai East,2020,Flash Flood,Moderate

@@ -1,0 +1,93 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "wardId": "W-01",
+        "wardName": "Silpukhuri Ward",
+        "district": "Kamrup",
+        "state": "Assam",
+        "streamName": "Bharalu Stream"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [91.765, 26.185],
+            [91.780, 26.185],
+            [91.780, 26.195],
+            [91.765, 26.195],
+            [91.765, 26.185]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wardId": "W-02",
+        "wardName": "Dispur Valley",
+        "district": "Kamrup",
+        "state": "Assam",
+        "streamName": "Basistha River"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [91.785, 26.140],
+            [91.805, 26.140],
+            [91.805, 26.155],
+            [91.785, 26.155],
+            [91.785, 26.140]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wardId": "W-03",
+        "wardName": "Kamakhya Foothills",
+        "district": "Kamrup",
+        "state": "Assam",
+        "streamName": "Brahmaputra Tributary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [91.700, 26.160],
+            [91.725, 26.160],
+            [91.725, 26.175],
+            [91.700, 26.175],
+            [91.700, 26.160]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "wardId": "W-04",
+        "wardName": "Silchar Central",
+        "district": "Cachar",
+        "state": "Assam",
+        "streamName": "Barak River Tributary"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [92.780, 24.815],
+            [92.810, 24.815],
+            [92.810, 24.835],
+            [92.780, 24.835],
+            [92.780, 24.815]
+          ]
+        ]
+      }
+    }
+  ]
+}
